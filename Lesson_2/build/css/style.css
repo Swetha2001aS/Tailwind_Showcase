@@ -612,6 +612,10 @@ video {
   margin-top: 1rem;
 }
 
+.-mt-0\.5 {
+  margin-top: -0.125rem;
+}
+
 .flex {
   display: flex;
 }
@@ -913,6 +917,13 @@ video {
   transition-duration: 500ms;
 }
 
+/* .toggle-btn{
+        @apply [&>div::before]:translate-y-0   [&>div::before]
+        :rotate-45  [&>div::after]:translate-y-0   [&>div::before]
+        :-rotate-45 [&>div]:bg-transparent 
+
+    } */
+
 /* custom media queries */
 
 .before\:absolute::before {
@@ -961,6 +972,11 @@ video {
 .before\:transform::before {
   content: var(--tw-content);
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.before\:rounded::before {
+  content: var(--tw-content);
+  border-radius: 0.25rem;
 }
 
 .before\:bg-white::before {
@@ -1060,6 +1076,11 @@ video {
 .after\:transform::after {
   content: var(--tw-content);
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.after\:rounded::after {
+  content: var(--tw-content);
+  border-radius: 0.25rem;
 }
 
 .after\:bg-white::after {
