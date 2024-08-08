@@ -12,13 +12,10 @@ module.exports = {
             '0%':{transfrom:'scaleY(0)'},
             '80%':{transfrom:'scaleY(1.2)'},
             '100%':{transfrom:'scaleY(1)'},
-
         }
       },
       keyframes:{
         'open-menu' : 'open-menu 9.5s ease-in-out forword',
-
-
       }
     },
   },
